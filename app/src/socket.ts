@@ -1,3 +1,5 @@
 import { io } from 'socket.io-client';
 
-export const socket = io('http://192.168.1.123:3001');
+const SERVER_URL = import.meta.env.SERVER_URL || 'localhost:3001';
+
+export const socket = io(SERVER_URL);

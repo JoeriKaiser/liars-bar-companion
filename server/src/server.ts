@@ -2,22 +2,23 @@ import express from 'express';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
 import { Player, GameState } from './types';
+import dotenv from 'dotenv';
 
 const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://192.168.1.123:5173",
+    origin: process.env.CLIENT_URL,
     methods: ["GET", "POST"]
   }
 });
 
-const tableCards = ['PIQUE', 'COEUR', 'TREFLE'] as const;
+const tableCards = ['Q', 'J', 'K'] as const;
 
 const gameState: GameState = {
   isGameStarted: false,
   players: [],
-  tableCard: 'PIQUE',
+  tableCard: 'Q',
   roundNumber: 1,
   isHellMode: false
 };
@@ -25,7 +26,7 @@ const gameState: GameState = {
 function resetGame() {
   gameState.isGameStarted = false;
   gameState.roundNumber = 1;
-  gameState.tableCard = 'PIQUE';
+  gameState.tableCard = 'Q';
   gameState.lastAction = undefined;
   
   gameState.players = gameState.players.map(player => ({
@@ -158,7 +159,7 @@ socket.on('shootPlayer', (targetId: string) => {
   });
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 httpServer.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

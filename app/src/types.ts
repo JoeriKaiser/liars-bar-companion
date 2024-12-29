@@ -10,7 +10,7 @@ export interface Player {
 export interface GameState {
   isGameStarted: boolean;
   players: Player[];
-  tableCard: 'PIQUE' | 'COEUR' | 'TREFLE';
+  tableCard: 'Q' | 'J' | 'K'; 
   roundNumber: number;
   lastAction?: {
     player: string;

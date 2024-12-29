@@ -13,7 +13,7 @@ function App() {
     players: [],
     isHellMode: false,
     roundNumber: 1,
-    tableCard: 'PIQUE'
+    tableCard: 'Q'
   });
 
   useEffect(() => {
