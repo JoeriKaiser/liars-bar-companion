@@ -1,0 +1,27 @@
+{
+  "game": {
+    "title": "🃏 Les Menteurs du Bar",
+    "enterName": "Entrez votre nom",
+    "joinGame": "Rejoindre la partie",
+    "round": "Tour {{number}}",
+    "hellMode": "😈 Mode Enfer",
+    "normalMode": "😇 Mode Normal",
+    "gameMode": "Mode de Jeu",
+    "you": " (Vous)",
+    "tableCard": "Carte de Table",
+    "nextRound": "Tour Suivant",
+    "actions": {
+      "pullTrigger": "Tirer",
+      "selectTarget": "Sélectionner la cible",
+      "shoot": "Tirer",
+      "readyUp": "Prêt ?",
+      "ready": "Prêt !"
+    },
+    "results": {
+      "survived": "{{player}} a survécu à la chambre {{chamber}}",
+      "died": "{{player}} est mort à la chambre {{chamber}}",
+      "shotSURVIVED": "{{shooter}} a tiré sur {{target}} qui a survécu à la chambre {{chamber}}",
+      "shotDIED": "{{shooter}} a tiré sur {{target}} qui est mort à la chambre {{chamber}}"
+    }
+  }
+}

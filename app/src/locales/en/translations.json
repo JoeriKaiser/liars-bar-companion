@@ -1,0 +1,27 @@
+{
+  "game": {
+    "title": "🃏 New years Liar's Bar",
+    "enterName": "Enter your name",
+    "joinGame": "Join Game",
+    "round": "Round {{number}}",
+    "hellMode": "😈 Hell Mode",
+    "normalMode": "😇 Normal Mode",
+    "gameMode": "Game Mode",
+    "you": " (You)",
+    "tableCard": "Table Card",
+    "nextRound": "Next Round",
+    "actions": {
+      "pullTrigger": "Pull Your Trigger",
+      "selectTarget": "Select target",
+      "shoot": "Shoot",
+      "readyUp": "Ready Up",
+      "ready": "Ready!"
+    },
+    "results": {
+      "survived": "{{player}} survived chamber {{chamber}}",
+      "died": "{{player}} died on chamber {{chamber}}",
+      "shotSURVIVED": "{{shooter}} shot {{target}} who survived chamber {{chamber}}",
+      "shotDIED": "{{shooter}} shot {{target}} who died on chamber {{chamber}}"
+    }
+  }
+}
