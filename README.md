@@ -92,8 +92,8 @@ Backend:
 ## 🌍 Internationalization
 The app supports multiple languages:
 
-English (default)
+English
 
-French
+French (default)
 
 Language can be changed using the language switcher in the top right corner.
