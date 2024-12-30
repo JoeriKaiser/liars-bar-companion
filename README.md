@@ -36,8 +36,8 @@ Liar's Bar is a social deduction game that combines elements of Roulette with ca
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/liars-bar.git
-cd liars-bar
+git clone https://github.com/JoeriKaiser/liars-bar-companion.git
+cd liars-bar-companion
 ```
 2. Install dependencies for server and client:
 ```bash
