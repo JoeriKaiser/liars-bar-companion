@@ -4,11 +4,12 @@ import { Server } from 'socket.io';
 import { Player, GameState } from './types';
 import dotenv from 'dotenv';
 
+const env = dotenv.config().parsed;
 const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
-    origin: process.env.CLIENT_URL,
+    origin: env!.CLIENT_URL ?? 'http://localhost:5173',
     methods: ["GET", "POST"]
   }
 });
@@ -159,7 +160,7 @@ socket.on('shootPlayer', (targetId: string) => {
   });
 });
 
-const PORT = process.env.PORT || 3001;
+const PORT = env?.port ?? 3001;
 httpServer.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
